@@ -6,7 +6,7 @@
 
 * AWS Cloud9
 * Ruby
-* Git
+* Git(SSH通信)
 * Heroku
 
 ```
