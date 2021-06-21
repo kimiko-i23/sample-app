@@ -30,10 +30,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  font-family: normal;
 }
 
 h2 {
@@ -42,7 +43,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+ color: #777;
 }
 
 p {
@@ -52,20 +53,42 @@ p {
 
 /* ヘッダー */
 
+#header {
+  background-color: #008080;
+}
+
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: capitalise;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  font-style: italic;
+  &:hover {
+  color: silver;
+  text-decoration: none;
+  }
 }
 
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
+li .header-list {
+  background-color: #008080;
+  color: #fff !important;
+  font-weight: bold;
+  &:hover {
+    color: silver !important; 
+  }
+}
+
+#dropdown-title {
+  background-color: #008080;
+}
+
+li.dropdown-header {
+    background-color: rgba(200, 200, 200, 0.5);
+    font-weight: bold; 
 }
 
 /* デバッグウインドウ */
