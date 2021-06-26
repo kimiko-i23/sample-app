@@ -67,23 +67,25 @@ p {
   padding-top: 9px;
   font-weight: bold;
   font-style: italic;
-  &:hover {
-  color: silver;
+}
+
+#logo:hover {
+  color: #808080;
   text-decoration: none;
-  }
 }
 
 li .header-list {
   background-color: #008080;
   color: #fff !important;
   font-weight: bold;
-  &:hover {
+}
+
+#header-list:hover {
     color: silver !important; 
-  }
 }
 
 #dropdown-title {
-  background-color: #008080;
+  background-color: teal;
 }
 
 li.dropdown-header {

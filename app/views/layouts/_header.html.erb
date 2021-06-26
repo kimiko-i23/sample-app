@@ -3,14 +3,14 @@
     <%= link_to "Task App", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "トップ", root_path, class: "header-list" %></li>
+        <li><%= link_to "トップ", root_path, id: "top" %></li>
         <% if logged_in? %>
           <!--<!% if current_user.admin? %>-->
-           <li><%= link_to "利用者一覧", "#", class: "header-list" %></li>
+           <li><%= link_to "利用者一覧", "#", id: "user" %></li>
           <!--<!% end %>-->
-           <li><%= link_to "タスク作成", "#", class: "header-list" %></li>
+           <li><%= link_to "タスク作成", "#", id: "task" %></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle header-list" data-toggle="dropdown" id="dropdown-title">
+              <a href="#" class="dropdown-toggle header-list" data-toggle="dropdown", id="dropdown-title">
                 <%= current_user.name %> <b class="caret"></b>
               </a>
             <ul class="dropdown-menu">
